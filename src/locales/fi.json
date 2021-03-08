@@ -1,0 +1,147 @@
+{
+    "pages": {
+        "home": "Koti",
+        "blog": "Blogi",
+        "contact": "Yhteys",
+        "appz": "Appz"
+    },
+
+    "footer": {
+        "sitemap": "Sivukartta",
+        "some": "Sosiaalinen media",
+        "dev": "Juho Lindemark",
+        "poweredby": "Powered by"
+    },
+
+    "home": {
+        "headline": "Pidä hyvää huolta kissastasi!",
+        "p1": "Kissat ovat hienoja eläimiä, joita usein vähätellään. Jokaisella kissalla on oikeus hyvään kotiin!",
+        "p2": "Olen vilma tyttökissa Suomesta etelä-pohjanmaalta. Heittäydyimme 'omistajani' kanssa luovaksi ja pistimme blogin pystyyn.",
+        "p3": "Täällä me kirjoitellaan kaikesta kissoihin liittyvästä ja myös meidän kuulumisista. Ideoita suorastaan pursuaa, joten pysy kuulolla ja näkyvillä!",
+        "p4": "Seuraa meitä Twitterissä tai Facebookissa (linkit alla), ilmoitellaan siellä uutisia ja pieniä kuulumisia!",
+        "h4": "Voit ottaa meihin yhteyttä ja jättää palautetta yhteys-sivulta!",
+        "signature": "- Vilma - "
+    },
+    "formPage": {
+        "headline": "Lähetä kysymyksiä Vilmalle tai muuta palautetta sivuista. Täällä voit myös raportoida bugeista esim jos joku linkki ei toimi!",
+        "noSpecialChar": "Älä käytä erikoismerkkejä se estää yhteydenoton lähettämisen!",
+        "requiredItemsInfo": "* merkityt kentät ovat pakollisia",
+        "formHeader": "Otsikko: *",
+        "email": "Sähköposti",
+        "typeOfFeedback": "Yhteydenoton tyyppi: *",
+        "message": "Kirjoita viestisi: *",
+        "submitBtn": "Lähetä",
+        "headlineplaceholder": "Max 20 merkkiä",
+        "emaillaceholder": "Täytä vain jos haluat vastauksen",
+        "errorWhenSendingMail": "Tapahtui odottamaton sisäinen virhe, voit lähettää palautteesi sähköpostilla osoitteeseen: dev@catsopinion.com.",
+        "errorInFilling": "Käytit kiellettyjä merkkejä tai botti suojaus luulee sinua robotiksi, päivitä sivu ja yritä uudelleen!",
+        "formSucces": "Viestisi on vastaanotettu, kiitos palautteesta!",
+        "optionsheader": "--Valitse tyyppi",
+        "options1": "Bugiraportti",
+        "options2": "Kysymys",
+        "options3": "Muu"
+    },
+    "privacypolicy": {
+        "timestamp": "Päivitetty ",
+        "item1": {
+            "headline": "Cats opinionin yksityisyyskäytäntö",
+            "text": " Meidän tavoite on tarjota käyttäjälle turvallinen selaus kokemus ja kunnioittaa käyttäjän yksityisyyttä. Tämän takia emme kerää mitään ylimääräistä tietoa. Yritämme olla mahdollisimman avoimia ja kertoa rehellisesti mitä kerätään.  Cats' opinion ei kerää yksityisiä tietoja käyttäjistä (katso sähköposti alla)",
+            "quote": "-Sivuston pitäisi olla olemassa käyttäjälle, eikä käyttäjän sivustolle!"
+        },
+        "item2": {
+            "headline": "Mitä tietoa tallennamme?",
+            "text": "Cats Opinion ei kerää tai tallenna mitään henkilökohtaista tietoa kävijöistä! Olemme tehneet hirveästi töitä välttääksemme evästeiden käyttämisen (myös kolmansien osapuolien) ja tiedon keruun. Olemme kehittäneet oman analytiikan johon ei kerätä/käytetä mitään käyttäjän tietoja.",
+            "quote": ""
+        },
+        "item3": {
+            "headline": "Käyttäjien sähköpostiosoitteet",
+            "text": "Cats Opinion ei varastoi tai myy osoitteita ulkopuolisille. Yhteys sivulla sähköpostiosoitteen antaminen on vapaaehtoista ja suositeltua jos haluaa viestiinsä vastauksen. Sähköpostiosoitetta säilytetään niin kauan kuin yhteydenpito sitä vaatii, tämän jälkeen se poistetaan järjestelmästämme eikä sitä enään ole Cats Opinionin hallussa.",
+            "quote": ""
+        },
+        "item4": {
+            "headline": "Mitä 3 osapuolen evästeitä  meillä on?",
+            "text": "Ei mitään, emme käytä mitään mikä asettaa evästeitä niin kauan kuin se on mahdollista sivuston toiminnan kannalta!",
+            "quote": ""
+        },
+        "item6": {
+            "headline": "Paras eväste/keksi(eng. cookie) maailmassa?",
+            "text": "Ei digitaalinen, amerikkalainen suklaahippukeksi!",
+            "quote": ""
+        }
+    },
+    "blogsite": {
+        "header": {
+            "headline": "Pää kirjoittaja: Vilma",
+            "subheader1": "Kuka olen?",
+            "subheader1content": "Olen tyttö kissa Suomesta. Asun pienessä kylässä jossa asukkaita on noin 5576. olen syntynyt noin 2018 vuonna ja juhlin syntymäpäivääni nimipäivänäni 26 toukokuuta. Pidän normaaleista kissa jutuista kuten syömisestä, nukkumisesta, metsästyksestä ja leikkimisestä. olen itsenäinen eikä kukaan komentele minua. Asun hyvässä kodissa ja halusin alkaa jakaa tietoa kissoista!",
+            "subheader2": "Kuinka kissa kirjoittaa blogia?",
+            "subheader2content": "Minulla kätevä ihmis apuri (lue orja). Hän myös toimii haamukirjoittajana ja hoitaa web sivujen kehityksen. Pidämme kokouksia joissa kerron hänelle kuinka mikäkin asia pitää olla. Annoin hänelle hyvää hyvyyttäni oman osion appz johon se saa tehdä kaikkea mukavaa toimintaa.",
+            "subheader3": "Mistä blogissa on kyse?",
+            "subheader3content": "Jokapäiväisistä kissa jutuista, oravan jahtaamisesta ja mitä nyt milloinkin tulee mieleen. Kirjoitamme myös kissan hoito vinkkejä, vinkkejä uusille tai tuleville kissanomistajille sekä kissasta eläimenä. Meille pälkähti konsepti kirjoittaa näitä juttuja kokoelmina joista on helppo lukea pienempinä annoksina kerralla."
+        },
+        "serachbar": {
+            "searcby": "Etsi kirjoituksia: ",
+            "button": "Etsi",
+            "newest": "Uusimmat",
+            "oldest": "Vanhimmat"
+        },
+        "blogPostShower": {
+            "open": "Klikkaa auki lukeaksesi koko kirjoituksen"
+        }
+    },
+    "appPage": {
+        "card": {
+            "click": "Klikkaa kortista appi auki!",
+            "des": "Kuvaus"
+        },
+        "weatherApp": {
+            "name": "Sää botti",
+            "description": "Kysy Vilma botilta sää mielipide! Opit myös mielenkiintoisia faktoja kissojen lempi säästä! Tietenkin saat myös mielipiteen säästä",
+            "inputHelp": "Kirjoita kaupungin nimi",
+            "result": "Nykyinen lämpötila: ",
+            "resultType": " C",
+            "humidity": "Kosteusprosentti on: ",
+            "humidityType": " %",
+            "wind": "Tuulen-nopeus on: ",
+            "windType": " M/s",
+            "catMessageHeader": "Vilma botti sanoo: ",
+            "backBtn": "Pienennä",
+            "answerCardHeader": "Vilma botin sää analyysi",
+            "errormessage": "ERRORI, tarkasta kaupungin nimi!"
+        }
+    },
+    "metadata": {
+        "home": {
+            "title": " Sivu omistettu kissoille, blogi kissan valvomana ja hyödyllistä tietoa kaikille kissaihmisille ja kissoista kiinnostuneille.",
+            "description": "Cats' opinion on paras kissa blogi maailmassa! Opi kissan hoito vinkkejä ja kissoista lajina. Tutki opettavaisia kissa appseja joista voit löytää uutta ja kiinnostavaa kissa knoppitietoa. Vieraile blogissa lukemassa kissoista yleistietoa, hoitovinkkejä ja meidän henkilökohtaisia blogi postauksia. Voit olla yhteydessä Cats' opinioniin yhteys sivulta!"
+        },
+        "blog": {
+            "title": "Blogi pelkästään kissoista ja kissan hoidosta.",
+            "description": "Lue kissa blogia ja opi lisää kissoista lajina sekä saat viimeisimmät kuulumiset ja uutiset Cats' opinionia koskien. Kirjoitamme Vilman kanssa kaikesta mikä liittyy kissoihin ja mitä mieleen kulloinkin on juolahtanut."
+        },
+        "contact": {
+            "title": "Ota yhteyttä ja lähetä palautetta!",
+            "description": "Kerro meille mikä meni vikaan tai mikä on hyvin. Kaikki palaute on tervetullutta!"
+        },
+        "appz": {
+            "title": "Kissa appseja ja pelejä joista oppii kissa tietoutta!",
+            "description": "Julkaisemme hauskoja ja opettavaisia kissoihin liittyviä pelejä ja appseja!"
+        },
+        "privacypolicy": {
+            "title": "Tietosuojakäytäntö johon me uskomme ja noudatamme.",
+            "description": "Tutustu tietosuojakäytäntöömme."
+        }
+    },
+    "header": {
+        "home": "Ainoa mielipide jota kissan omistaja tarvitsee!",
+        "contact": "Lähetä meille palautetta!",
+        "appz": "Appi alue, pelaa ja kokeile!"
+    },
+    "cookiebanner": {
+        "header": "Ei keksejä/evästeitä sinulle!",
+        "p1": "Cats' opinion arvostaa yksityisyyttä! Emme tarjoile turhia evästeitä tai evästeitä jotka keräävät henkilökohtaista tietoa.",
+        "p2": "Yksityisyys käytäntömme löytyy",
+        "link": "täältä",
+        "button": "Ok, mahtavaa!"
+    }
+}

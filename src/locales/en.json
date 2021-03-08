@@ -1,0 +1,145 @@
+{
+    "pages": {
+        "home": "Home",
+        "blog": "Blog",
+        "contact": "Contact",
+        "appz": "Appz"
+    },
+    "footer": {
+        "sitemap": "Sitemap",
+        "some": "Social media",
+        "dev": "Juho Lindemark",
+        "poweredby": "Powered by"
+    },
+    "home": {
+        "headline": "Take good care off your cat!",
+        "p1": "Cats are wonderful creatures that get overlooked often. Every cat deserves a good home and decent family.",
+        "p2": "I am Vilma girl cat from Finland/South Ostrobothnia. We got creative with my 'owner' and decided to put up a blog.",
+        "p3": "We write about our day to day life and also general cat stuff. We have already lots of future post ideas! So stay tuned.",
+        "p4": "Follow us on Twitter or Facebook (links below), we announce content drops on those platforms!",
+        "h4": "Also you can contact me or my human at the contact page.",
+        "signature": "- Vilma - "
+    },
+    "formPage": {
+        "headline": "Send questions for vilma or other feedback about the website. Please report bugs and broken links too!",
+        "noSpecialChar": "Please do not use any special characters that prevent form sending!",
+        "requiredItemsInfo": "* marked items are required",
+        "formHeader": "Headline: *",
+        "email": "Email",
+        "typeOfFeedback": "Type of feedback: *",
+        "message": "Your message: *",
+        "submitBtn": "Submit",
+        "headlineplaceholder": "Max 20 characters",
+        "emaillaceholder": "Fill only if you want answer",
+        "errorWhenSendingMail": "There was an internal error, we suggest sending a direct email to dev@catsopinion.com.",
+        "errorInFilling": "There were illegal characters in your form or our bot detection thinks you are bot, refresh the page and please try again!",
+        "formSucces": "Your message has been received! Thank you for the feedback!",
+        "optionsheader": "--Select type",
+        "options1": "Bug report",
+        "options2": "Question",
+        "options3": "Other"
+    },
+    "privacypolicy": {
+        "timestamp": "Updated ",
+        "item1": {
+            "headline": "Cats opinion's virtual strategy",
+            "text": "Our policy is to offer users safe experience and respect their privacy. This is why we don't collect any unnecessary data. We will be very open and informative about anything we might collect. Cats' opinion does not store users personal data (read email below).",
+            "quote": "-Website should be for user, user should not be data source!"
+        },
+        "item2": {
+            "headline": "What user data we store?",
+            "text": "Cats Opinion does not collect or store any sensitive/personal user data! We have worked very hard to avoid cookie usage and data gathering! We have developed our own analytic tool that does not need any user data to function!",
+            "quote": ""
+        },
+        "item3": {
+            "headline": "Users email addresses",
+            "text": " CatsOpinion does not store or distribute those email addresses to anyone. When a user wants to be contacted and leaves an email at the contact page, the email address is stored only as long as necessary to communicate. After that email address will be removed from our systems permanently and never seen again. Contacting can also be done anonymously or via email at dev@catsopinion.com.",
+            "quote": ""
+        },
+        "item4": {
+            "headline": "What 3rd party cookies we have?",
+            "text": "None, we avoid cookies as long it is possible! ",
+            "quote": ""
+        },
+        "item6": {
+            "headline": "What is best type of cookie in world?",
+            "text": "Non digital, chocolate chip cookie!",
+            "quote": ""
+        }
+    },
+    "blogsite": {
+        "header": {
+            "headline": "The head writer: Vilma",
+            "subheader1": "Who am i?",
+            "subheader1content": " I am a female cat from finland. I live in a small town where the population is somewhere around 5 576. I'm born somewhere around 2018 and I celebrate my birthday on my calendar name day may 26. I like normal cat stuff sleeping, eating, hunting and playing. I'm very independent and nobody pushes me around. I live in a good home and wanted to start sharing things about my life and spread knowledge about cats in general!",
+            "subheader2": "How does cat write a blog?",
+            "subheader2content": " I have a handy human helper (read slave). He is my ghost writer and also does websites coding and other development. We have meetings about blog direction and upcoming posts. i've even allowed him to have his own section called appz.",
+            "subheader3": "What's a blog about?",
+            "subheader3content": "Everyday cat stuff like sleeping or squirrel chasing, whatever pops to mind. We also write about general cat care, tips for new cat owners and cats as species. Basically just cat stuff! We came up with this concept called series so our posts inside one series are linked together so they are easy to digest in little smaller portions and more comfy to follow through."
+        },
+        "serachbar": {
+            "searcby": "Search by:",
+            "button": "Search",
+            "newest": "Newest",
+            "oldest": "Oldest"
+        },
+        "blogPostShower": {
+            "open": "Click to read full post"
+        }
+    },
+    "appPage": {
+        "card": {
+            "click": "Click card to open!",
+            "des": "Description"
+        },
+        "weatherApp": {
+            "name": "Weather app",
+            "description": " Ask Vilma bot how she feels about weather! App also gives you useful facts and of course weather opinions from vilma!",
+            "inputHelp": "Write name of the town",
+            "result": "Current temperature is: ",
+            "resultType": " C",
+            "humidity": "Humidity percent is: ",
+            "humidityType": " %",
+            "wind": "Wind speed is: ",
+            "windType": " M/s",
+            "catMessageHeader": "Vilma bot say's: ",
+            "backBtn": "Minimize",
+            "answerCardHeader": "Here is the weather",
+            "errormessage": "ERROR, please check town name!"
+        }
+    },
+    "metadata": {
+        "home": {
+            "title": " Page about cats, blog by cat and information for cat owners.",
+            "description": "Cats' opinion is number one cat blog in the world! Learn about cats and get cat care tips. Inspect apps in the app page and gain more information about cats. Visit our special blog to read about cats as species, personal stories and everything cat related information! Send feedback from the contact page."
+        },
+        "blog": {
+            "title": "Blog about cats, learn about cats and get insights to cats life!",
+            "description": "Read our blog about cats. You will learn information about cats. Get a peek into cats day to day life! Vilma the cat writes special stories about cat life!"
+        },
+        "contact": {
+            "title": "Contact us and give us feedback!",
+            "description": "Tell us what went wrong or what was good! Any feedback will be highly appreciated by Cats’ opinion."
+        },
+        "appz": {
+            "title": "Appz are here! Play with cat games or cat bots.",
+            "description": "Cats’ opinion publishes informative apps about cats! Apps are meant to be informative and fun!"
+        },
+        "privacypolicy": {
+            "title": "Our privacy policy for you so nothing stays unclear.",
+            "description": "Cats’ opinions privacy policy."
+        }
+    },
+    "header": {
+        "home": "The only opinion cat owners need!",
+        "contact": "Hit us with feedback!",
+        "appz": "The appz zone, play with the apps!"
+    },
+    "cookiebanner": {
+        "header": "No cookies for you!",
+        "p1": "Cats' opinion values your privacy! We don’t serve any unnecessary cookies or cookies that collect personal data!",
+        "p2": "Privacy policy can be found",
+        "link": "here",
+        "button": "Ok, that is awesome!"
+    }
+}

@@ -15,12 +15,12 @@ Vue.component("facebook", Facebook);
 Vue.component("twitter", Twitter);
 Vue.use(VueMeta);
 const firebaseConfig = {
-    apiKey: process.env.CATS_FIREBASE_API_KEY,
-    authDomain: process.env.CATS_FB_AUTH_DOMAIN,
-    projectId: process.env.CATS_FB_PROJECT_ID,
-    storageBucket: process.env.CATS_FB_STORAGE_BUCKET,
-    messagingSenderId: process.env.CATS_FB_MESSAGE_SENDER_ID,
-    appId: process.env.CATS_FB_APPID,
+    apiKey: process.env.VUE_APP_CATS_FIREBASE_API_KEY,
+    authDomain: process.env.VUE_APP_CATS_FB_AUTH_DOMAIN,
+    projectId: process.env.VUE_APP_CATS_FB_PROJECT_ID,
+    storageBucket: process.env.VUE_APP_CATS_FB_STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_APP_CATS_FB_MESSAGE_SENDER_ID,
+    appId: process.env.VUE_APP_CATS_FB_APPID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

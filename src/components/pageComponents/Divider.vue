@@ -14,6 +14,7 @@ export default {};
     width: 80%;
     border: 1px solid #67595e;
     border-radius: 1px;
-    opacity: 0.85;
+    opacity: 0.75;
+    color: #67595e;
 }
 </style>

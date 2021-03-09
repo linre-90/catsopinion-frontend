@@ -15,12 +15,12 @@ Vue.component("facebook", Facebook);
 Vue.component("twitter", Twitter);
 Vue.use(VueMeta);
 const firebaseConfig = {
-    apiKey: "AIzaSyCY97dR9vOGwFO5rAxE5Jq77I9axVh3mNE",
-    authDomain: "catsopinion-backend.firebaseapp.com",
-    projectId: "catsopinion-backend",
-    storageBucket: "catsopinion-backend.appspot.com",
-    messagingSenderId: "135107342022",
-    appId: "1:135107342022:web:b401193290d53fcfbc31c7",
+    apiKey: process.env.CATS_FIREBASE_API_KEY,
+    authDomain: process.env.CATS_FB_AUTH_DOMAIN,
+    projectId: process.env.CATS_FB_PROJECT_ID,
+    storageBucket: process.env.CATS_FB_STORAGE_BUCKET,
+    messagingSenderId: process.env.CATS_FB_MESSAGE_SENDER_ID,
+    appId: process.env.CATS_FB_APPID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

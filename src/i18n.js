@@ -20,8 +20,18 @@ function loadLocaleMessages() {
     return messages;
 }
 
+function detectLanguage() {
+    let userLang = navigator.language || navigator.userLanguage;
+    let parsedString = userLang.toLowerCase();
+    if (parsedString.includes("fi")) {
+        return "fi";
+    } else {
+        return "en";
+    }
+}
+
 export default new VueI18n({
-    locale: "en",
+    locale: detectLanguage(),
     fallbackLocale: "en",
     messages: loadLocaleMessages(),
 });

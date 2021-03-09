@@ -33,7 +33,6 @@ export default {
     },
     created() {
         this.$store.dispatch("toggleBlog", false);
-        //TODO change language based on browser, var userLang = navigator.language || navigator.userLanguage;
         logPageActivity("home", this.$i18n.locale, screen.width);
     },
 };

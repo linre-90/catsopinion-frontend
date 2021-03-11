@@ -22,6 +22,7 @@
 </template>
 
 <script>
+//TODO fetch news from database and translations
 import SingleHotNew from "./SinglehotNew";
 export default {
     components: { SingleHotNew },
@@ -41,7 +42,7 @@ export default {
                         headline:
                             "Exiting new series 'What is my cat?' kicks off 17.3.2021",
                         message:
-                            "Series goes through cat anchestors and history all the way from dinosaurs!",
+                            "Series goes through cat anchestors and history all the way from 66 million years ago!",
                     },
                 ],
                 timer: null,
@@ -53,6 +54,9 @@ export default {
     mounted: function() {
         this.startSlide();
         this.next();
+    },
+    created() {
+        /* TODO SHOW SPINNER*/
     },
 
     methods: {

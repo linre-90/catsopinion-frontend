@@ -17,17 +17,21 @@
                 ></i>
             </h4>
             <Divider />
+            <HotNews />
+            <Divider />
         </div>
     </div>
 </template>
 
 <script>
 import Divider from "./Divider";
+import HotNews from "../HotNews/Hotnews";
 
 export default {
     name: "homepage",
     components: {
         Divider,
+        HotNews,
     },
     methods: {},
     created: function() {

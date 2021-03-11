@@ -95,7 +95,7 @@ export default {
 }
 
 .newsContainer {
-    height: 200px;
+    height: 155px;
 }
 
 .loadingBar {
@@ -143,6 +143,12 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
+    .newsContainer {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
     .newsContainer {
         height: 250px;
     }

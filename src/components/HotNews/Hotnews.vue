@@ -56,7 +56,7 @@ export default {
         this.next();
     },
     created() {
-        /* TODO SHOW SPINNER*/
+        /* TODO SHOW SPINNER, load news data*/
     },
 
     methods: {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2><u>What is new</u></h2>
+        <h2>What is new</h2>
         <div style="margin:50px"></div>
         <div class="newsContainer">
             <transition-group name="newsCarousel" tag="div">

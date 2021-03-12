@@ -17,19 +17,22 @@
             </span>
         </div>
         <div style="margin:50px"></div>
-        <div class="loadingBar">
-            <div id="bar"></div>
-        </div>
+        <ProgressBar
+            ref="brogBar"
+            v-if="!loading"
+            :time="15000"
+            :barWidth="200"
+        />
     </div>
 </template>
 
 <script>
-//TODO fetch news from database and translations
 import SingleHotNew from "./SinglehotNew";
 import LoadingSpinner from "../loadingIcon/LoadinIcon";
 import { getHotNews } from "../../Queries";
+import ProgressBar from "../ProgressBar/ProgresBar";
 export default {
-    components: { SingleHotNew, LoadingSpinner },
+    components: { SingleHotNew, LoadingSpinner, ProgressBar },
     data() {
         {
             return {
@@ -37,6 +40,7 @@ export default {
                 timer: null,
                 currentIndex: 0,
                 loading: true,
+                firstTime: true,
             };
         }
     },
@@ -46,8 +50,8 @@ export default {
         this.next();
     },
     created() {
-        /* TODO SHOW SPINNER, load news data*/
         this.getNews();
+        this.loading = false;
     },
 
     methods: {
@@ -55,12 +59,11 @@ export default {
             this.timer = setInterval(this.next, 15000);
         },
         next: function() {
-            const barr = document.getElementById("bar");
-            barr.classList.remove("measureBar");
-            void barr.offsetWidth;
-            barr.classList.add("measureBar");
             this.currentIndex += 1;
-            this.newsTime = 15;
+            if (!this.firstTime) {
+                this.$refs.brogBar.resetCounter();
+            }
+            this.firstTime = false;
         },
         countDown: function() {
             this.newsTime -= 1;
@@ -70,13 +73,15 @@ export default {
                 this.$firebase.firestore(),
                 this.$i18n.locale
             );
-            this.loading = false;
         },
     },
     computed: {
         current: function() {
             return this.news[Math.abs(this.currentIndex) % this.news.length];
         },
+    },
+    beforeDestroy() {
+        clearInterval(this.timer);
     },
 };
 </script>
@@ -98,50 +103,6 @@ export default {
 
 .newsContainer {
     height: 155px;
-}
-
-.loadingBar {
-    height: 3px;
-    width: 200px;
-    background-color: #a49393;
-    margin: auto;
-    margin-top: 40px;
-    opacity: 0.8;
-}
-
-.measureBar {
-    height: 3px;
-    width: 200px;
-    background-color: #67595e;
-    border-radius: 5px;
-    animation: grow;
-    animation-duration: 15s;
-    animation-iteration-count: 1;
-    margin-left: 0;
-}
-
-#barFill {
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-@keyframes grow {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@-webkit-keyframes grow {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 600px) {

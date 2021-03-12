@@ -54,6 +54,9 @@ export default {
             ];
         },
     },
+    beforeDestroy() {
+        clearInterval(this.timer);
+    },
 };
 </script>
 

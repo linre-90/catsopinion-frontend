@@ -99,7 +99,7 @@ export async function getHotNews(db, locale) {
         });
         return data;
     } catch (error) {
-        logErrorActivity("blog", locale, "findbyseries", error, 500);
+        logErrorActivity("news", locale, "getHotNews", error, 500);
         return ["error"];
     }
 }

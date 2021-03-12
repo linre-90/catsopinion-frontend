@@ -146,5 +146,6 @@
     },
     "hotnews": {
         "header": "Uutiset"
-    }
+    },
+    "errorInRoute": "Voi ei, etsimääsi sivua ei ole olemassa!"
 }

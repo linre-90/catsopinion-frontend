@@ -19,7 +19,7 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import(/*webpackChunkName: "contact-page"*/ "../views/Contact.vue"),
+            import(/*webpackChunkName: "contact"*/ "../views/Contact.vue"),
     },
     {
         path: "/privacypolicy",
@@ -29,7 +29,7 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () =>
             import(
-                /*webpackChunkName: "contact-page"*/ "../views/PrivacyPolicy.vue"
+                /*webpackChunkName: "privacypolicy"*/ "../views/PrivacyPolicy.vue"
             ),
     },
     {
@@ -39,7 +39,7 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import(/*webpackChunkName: "contact-page"*/ "../views/Blog.vue"),
+            import(/*webpackChunkName: "blogpage"*/ "../views/Blog.vue"),
     },
     {
         path: "/appz",
@@ -48,7 +48,7 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import(/*webpackChunkName: "contact-page"*/ "../views/Appz.vue"),
+            import(/*webpackChunkName: "appz"*/ "../views/Appz.vue"),
     },
     {
         path: "/weatherapp",
@@ -58,7 +58,7 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () =>
             import(
-                /*webpackChunkName: "contact-page"*/ "../components/appz/WeatherApp.vue"
+                /*webpackChunkName: "weatherapp"*/ "../components/appz/WeatherApp.vue"
             ),
     },
     {
@@ -68,9 +68,7 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import(
-                /*webpackChunkName: "contact-page"*/ "../views/Error404.vue"
-            ),
+            import(/*webpackChunkName: "error"*/ "../views/Error404.vue"),
     },
 ];
 

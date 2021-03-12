@@ -21,10 +21,7 @@ export default {
     },
     methods: {
         backToTop: () => {
-            // safari
-            document.body.scrollTop = 0;
-            //real browsers
-            document.documentElement.scrollTop = 0;
+            window.scrollTo({ top: 0, behavior: "smooth" });
         },
         checkScroll: () => {
             let backToTopBTN = document.getElementById("backToTopBtn");

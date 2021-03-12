@@ -19,7 +19,6 @@ export async function findNewest(db, locale) {
         });
         return data;
     } catch (error) {
-        console.log(error);
         logErrorActivity("blog", locale, "findnewest", error, 500);
         return ["error"];
     }

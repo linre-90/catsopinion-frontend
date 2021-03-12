@@ -27,7 +27,7 @@ export function logPageActivity(page, locale, screen) {
             .then()
             .catch((error) => {
                 if (error.response) {
-                    console.log(error.response.status);
+                    return error.response.status;
                 }
             });
     }
@@ -53,7 +53,7 @@ export function logClickActivity(page, locale, link, screen) {
             .then()
             .catch((error) => {
                 if (error.response) {
-                    console.log(error.response.status);
+                    return error.response.status;
                 }
             });
     }
@@ -85,9 +85,8 @@ export function logErrorActivity(
             )
             .then()
             .catch((error) => {
-                console.log(error);
                 if (error.response) {
-                    console.log(error.response.status);
+                    return error.response.status;
                 }
             });
     }

@@ -178,7 +178,16 @@ export default {
     beforeDestroy() {
         const user = this.$firebase.auth().currentUser;
         if (user) {
-            user.delete().catch((error) => console.log(error));
+            user.delete().catch((error) => {
+                logErrorActivity(
+                    "contact",
+                    this.$i18n.locale,
+                    "logoutAnonymous",
+                    error,
+                    500,
+                    screen.width
+                );
+            });
         }
     },
     data() {
@@ -205,7 +214,16 @@ export default {
                 await this.$firebase
                     .auth()
                     .signInAnonymously()
-                    .catch((error) => console.log(error));
+                    .catch((error) => {
+                        logErrorActivity(
+                            "contact",
+                            this.$i18n.locale,
+                            "errorLogInAnonymousUser",
+                            error,
+                            500,
+                            screen.width
+                        );
+                    });
                 if (await this.$firebase.auth().currentUser) {
                     const axiosData = {
                         headline: e.target.headline.value,

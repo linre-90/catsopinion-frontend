@@ -85,3 +85,21 @@ async function findBySeries(db, queryParams, locale) {
         return ["error"];
     }
 }
+
+export async function getHotNews(db, locale) {
+    let collection = db.collection("en-hot-news");
+    if (locale === "fi") {
+        collection = db.collection("fi-hot-news");
+    }
+    try {
+        let data = [];
+        const result = await collection.get();
+        result.forEach((element) => {
+            data.push(element.data());
+        });
+        return data;
+    } catch (error) {
+        logErrorActivity("blog", locale, "findbyseries", error, 500);
+        return ["error"];
+    }
+}

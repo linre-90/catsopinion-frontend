@@ -12,13 +12,13 @@
         "poweredby": "Powered by"
     },
     "home": {
-        "headline": "Take good care off your cat!",
-        "p1": "Cats are wonderful creatures that get overlooked often. Every cat deserves a good home and decent family.",
-        "p2": "I am Vilma girl cat from Finland/South Ostrobothnia. We got creative with my 'owner' and decided to put up a blog.",
-        "p3": "We write about our day to day life and also general cat stuff. We have already lots of future post ideas! So stay tuned.",
-        "p4": "Follow us on Twitter or Facebook (links below), we announce content drops on those platforms!",
-        "h4": "Also you can contact me or my human at the contact page.",
-        "signature": "- Vilma - "
+        "headline": " Welcome to cats opinion blog!",
+        "p1": "On this blog we write everything cat related incorporation with Vilma.",
+        "p2": "Our blog is a little weird because it is produced with my cat, Vilma! Vilma is a very active cat. She has taken her place as the manager and brains behind this whole project.",
+        "p3": "We blog about our personal events, sometimes we look behind scenes and of course cat stuff! Cat stuff includes cat history, cat behaviour and also cat care tips and tricks. We also have appz section where we publish small browser based “apps” to play and learn more about cats!",
+        "p4": "Our page is relatively new and it was officially launched 10.3.2021! Jump aboard right at the beginning and follow our journey!",
+        "h4": "Also you can contact me or Vilma at the contact page. Follow us on Facebook and Twitter links are below!",
+        "signature": "- Juho - Vilma - "
     },
     "formPage": {
         "headline": "Send questions for vilma or other feedback about the website. Please report bugs and broken links too!",
@@ -141,5 +141,8 @@
         "p2": "Privacy policy can be found",
         "link": "here",
         "button": "Ok, that is awesome!"
+    },
+    "hotnews": {
+        "header": "What is new"
     }
 }

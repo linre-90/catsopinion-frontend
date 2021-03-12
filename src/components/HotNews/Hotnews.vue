@@ -1,19 +1,21 @@
 <template>
     <div>
-        <h2>What is new</h2>
+        <h2>{{ $t("hotnews.header") }}</h2>
         <div style="margin:50px"></div>
         <div class="newsContainer">
-            <transition-group name="newsCarousel" tag="div">
-                <div v-for="i in [currentIndex]" :key="i">
-                    <SingleHotNew
-                        :date="current.date"
-                        :headline="current.headline"
-                        :message="current.message"
-                    />
-                </div>
-            </transition-group>
+            <LoadingSpinner v-if="loading" />
+            <span v-if="!loading && this.news.length > 0">
+                <transition-group name="newsCarousel" tag="div">
+                    <div v-for="i in [currentIndex]" :key="i">
+                        <SingleHotNew
+                            :date="current.date"
+                            :headline="current.headline"
+                            :message="current.message"
+                        />
+                    </div>
+                </transition-group>
+            </span>
         </div>
-
         <div style="margin:50px"></div>
         <div class="loadingBar">
             <div id="bar"></div>
@@ -24,29 +26,17 @@
 <script>
 //TODO fetch news from database and translations
 import SingleHotNew from "./SinglehotNew";
+import LoadingSpinner from "../loadingIcon/LoadinIcon";
+import { getHotNews } from "../../Queries";
 export default {
-    components: { SingleHotNew },
+    components: { SingleHotNew, LoadingSpinner },
     data() {
         {
             return {
-                news: [
-                    {
-                        date: "8.3.2021",
-                        headline:
-                            "Cats opinion is now a single page application! Made with Vue.js!",
-                        message:
-                            "Cats opinion is now a spa which offers mobile like experience and painless navigation through site!",
-                    },
-                    {
-                        date: "10.3.2021",
-                        headline:
-                            "Exiting new series 'What is my cat?' kicks off 17.3.2021",
-                        message:
-                            "Series goes through cat anchestors and history all the way from 66 million years ago!",
-                    },
-                ],
+                news: [],
                 timer: null,
                 currentIndex: 0,
+                loading: true,
             };
         }
     },
@@ -57,6 +47,7 @@ export default {
     },
     created() {
         /* TODO SHOW SPINNER, load news data*/
+        this.getNews();
     },
 
     methods: {
@@ -73,6 +64,13 @@ export default {
         },
         countDown: function() {
             this.newsTime -= 1;
+        },
+        getNews: async function() {
+            this.news = await getHotNews(
+                this.$firebase.firestore(),
+                this.$i18n.locale
+            );
+            this.loading = false;
         },
     },
     computed: {

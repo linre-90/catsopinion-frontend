@@ -80,6 +80,7 @@ async function findBySeries(db, queryParams, locale) {
         });
         return data;
     } catch (error) {
+        console.log(error);
         logErrorActivity("blog", locale, "findbyseries", error, 500);
         return ["error"];
     }

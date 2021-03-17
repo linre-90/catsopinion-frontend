@@ -87,7 +87,8 @@
         },
         "blogPostShower": {
             "open": "Klikkaa auki lukeaksesi koko kirjoituksen"
-        }
+        },
+        "errorMessage": "Voi ei, kirjoituksia ei löytynyt! Jos ongelma jatkuu lähetä palautetta!"
     },
     "appPage": {
         "card": {
@@ -112,24 +113,24 @@
     },
     "metadata": {
         "home": {
-            "title": " Sivu omistettu kissoille, blogi kissan valvomana ja hyödyllistä tietoa kaikille kissaihmisille ja kissoista kiinnostuneille.",
-            "description": "Cats' opinion on paras kissa blogi maailmassa! Opi kissan hoito vinkkejä ja kissoista lajina. Tutki opettavaisia kissa appseja joista voit löytää uutta ja kiinnostavaa kissa knoppitietoa. Vieraile blogissa lukemassa kissoista yleistietoa, hoitovinkkejä ja meidän henkilökohtaisia blogi postauksia. Voit olla yhteydessä Cats' opinioniin yhteys sivulta!"
+            "title": "#1 Kissa Blogi Maailmassa",
+            "description": "Cats opinion on uusi ja moderni kissa aiheinen blogi! Sivuilta löydät kissan hoito vinkkejä ja mielenkiintoista tietoa kissoista. Psst. Kokeile myös appseja!"
         },
         "blog": {
-            "title": "Blogi pelkästään kissoista ja kissan hoidosta.",
-            "description": "Lue kissa blogia ja opi lisää kissoista lajina sekä saat viimeisimmät kuulumiset ja uutiset Cats' opinionia koskien. Kirjoitamme Vilman kanssa kaikesta mikä liittyy kissoihin ja mitä mieleen kulloinkin on juolahtanut."
+            "title": "Opi Kissoista Blogimme Avulla",
+            "description": "Kissa varoitus! Blogissa käsitellään pelkkiä kissoihin liittyviä asioita. Opit uusia faktoja ja seuraat Vilman päivittäistä elämää."
         },
         "contact": {
             "title": "Ota yhteyttä ja lähetä palautetta!",
-            "description": "Kerro meille mikä meni vikaan tai mikä on hyvin. Kaikki palaute on tervetullutta!"
+            "description": "Kerro meille mikä meni vikaan tai mikä on hyvin. Kaikki palaute on tervetullutta oli se sitten positiivista tai negatiivista!"
         },
         "appz": {
-            "title": "Kissa appseja ja pelejä joista oppii kissa tietoutta!",
-            "description": "Julkaisemme hauskoja ja opettavaisia kissoihin liittyviä pelejä ja appseja!"
+            "title": "Kissa Appseja Ja Sovelluksia Löytyy Täältä!",
+            "description": "Julkaisemme itse kehittämiämme hauskoja ja opettavaisia kissoihin liittyviä pelejä ja appseja! Testaa ja muista jättää palautetta!"
         },
         "privacypolicy": {
-            "title": "Tietosuojakäytäntö johon me uskomme ja noudatamme.",
-            "description": "Tutustu tietosuojakäytäntöömme."
+            "title": "Tietosuojakäytäntömme On Juuri Sinua Varten",
+            "description": "Tietosuojakäytäntö johon me uskomme! Yksityisyys on tärkeää meille ja haluamme olla rehellisiä sekä läpinäkyviä siitä kuinka käsittelemme tietojasi."
         }
     },
     "header": {

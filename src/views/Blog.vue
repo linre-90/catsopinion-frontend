@@ -61,6 +61,7 @@ export default {
         getNewestFive: findNewest,
         async getData() {
             const db = this.$firebase.firestore();
+            this.errormessage = null;
             this.posts = await this.getNewestFive(db, this.$i18n.locale).catch(
                 (error) => {
                     logErrorActivity(
@@ -73,15 +74,16 @@ export default {
                     );
                 }
             );
-            if (this.posts[0] === "error") {
+            if (this.posts[0] === "error" || this.posts.length < 1) {
                 this.loading = false;
-                this.errormessage = "No documents to show!";
+                this.errormessage = this.$t("blogsite.errorMessage");
             }
             this.loading = false;
             this.removeAnimation();
         },
         getPostsByQuery: async function(queryParams) {
             this.loading = true;
+            this.errormessage = null;
             const db = this.$firebase.firestore();
             this.posts = [];
             this.posts = await getByQuery(
@@ -98,9 +100,13 @@ export default {
                     screen.width
                 );
             });
-            if (this.posts[0] === "error" || !queryParams.queryType) {
+            if (
+                this.posts[0] === "error" ||
+                !queryParams.queryType ||
+                this.posts.length < 1
+            ) {
                 this.loading = false;
-                this.errormessage = "No documents to show!";
+                this.errormessage = this.$t("blogsite.errorMessage");
             }
             this.removeAnimation();
             this.loading = false;

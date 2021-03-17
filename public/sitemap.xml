@@ -9,13 +9,13 @@
     <url>
         <loc>https://www.catsopinion.com/Weatherapp</loc>
         <lastmod>2021-03-17</lastmod>
-        <changefreq>mothly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.catsopinion.com/appz</loc>
         <lastmod>2021-03-17</lastmod>
-        <changefreq>mothly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
@@ -27,13 +27,13 @@
     <url>
         <loc>https://www.catsopinion.com/contact</loc>
         <lastmod>2021-03-17</lastmod>
-        <changefreq>mothly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.catsopinion.com/privacypolicy</loc>
         <lastmod>2021-03-17</lastmod>
-        <changefreq>mothly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
 </urlset>

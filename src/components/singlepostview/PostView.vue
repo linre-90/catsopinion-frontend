@@ -74,8 +74,22 @@ export default {
     font-family: "Lato", "sans-serif";
     font-size: 1.2rem;
     padding-inline-start: 10%;
-    margin-inline-start: 50px;
-    margin-inline-end: 50px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+}
+
+.post /deep/ ul {
+    font-family: "Lato", "sans-serif";
+    font-size: 1.2rem;
+    padding-inline-start: 10%;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    list-style: circle;
+}
+
+.post /deep/ li {
+    font-family: "Lato", "sans-serif";
+    font-size: 1.2rem;
 }
 
 .post /deep/ a:hover {
@@ -94,6 +108,22 @@ export default {
     p {
         width: 70%;
         line-height: 1.75em;
+    }
+    .post /deep/ ol {
+        font-family: "Lato", "sans-serif";
+        font-size: 1.2rem;
+        padding-inline-start: 10%;
+        margin-inline-start: 50px;
+        margin-inline-end: 50px;
+    }
+
+    .post /deep/ ul {
+        font-family: "Lato", "sans-serif";
+        font-size: 1.2rem;
+        padding-inline-start: 10%;
+        margin-inline-start: 50px;
+        margin-inline-end: 50px;
+        list-style: circle;
     }
 }
 @media only screen and (min-width: 1350px) {

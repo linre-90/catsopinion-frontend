@@ -17,12 +17,12 @@ export default {
     data() {
         return {
             images: [
-                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/daniel-park-BZYx2tOXfqA-unsplash.jpg",
-                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/dorothea-oldani-Hhm_fL04bE8-unsplash.jpg",
-                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/eric-han-Hd7vwFzZpH0-unsplash.jpg",
-                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg",
-                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/rafael-ishkhanyan-eoHUaRLrYxw-unsplash.jpg",
-                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/raquel-pedrotti-AHgpNYkX9dc-unsplash.jpg",
+                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/daniel-park-BZYx2tOXfqA-unsplash-min.jpg",
+                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/dorothea-oldani-Hhm_fL04bE8-unsplash-min.jpg",
+                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/eric-han-Hd7vwFzZpH0-unsplash-min.jpg",
+                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/mikhail-vasilyev-NodtnCsLdTE-unsplash+(1)-min.jpg",
+                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/rafael-ishkhanyan-eoHUaRLrYxw-unsplash-min.jpg",
+                "https://catcastimgs.s3.eu-north-1.amazonaws.com/staticimg/raquel-pedrotti-AHgpNYkX9dc-unsplash-min.jpg",
             ],
             timer: null,
             currentIndex: 0,

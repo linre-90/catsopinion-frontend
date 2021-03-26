@@ -27,16 +27,21 @@ export default new Vuex.Store({
                 active: false,
                 headerText: "This is privacy policy we believe!",
             },
+            {
+                name: "readerblog",
+                active: false,
+                headerText: "This is our blog reader!",
+            }
+            
         ],
         bannerOk: false,
     },
     mutations: {
         changeActivePage(state, pageName) {
             state.page.forEach((page) => {
+                page.active = false;
                 if (page.name === pageName) {
                     page.active = true;
-                } else {
-                    page.active = false;
                 }
             });
         },

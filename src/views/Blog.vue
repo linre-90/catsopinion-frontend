@@ -1,11 +1,12 @@
 <template>
     <div>
+        <!--
         <Backdrop v-if="readingPost" />
         <SinglePostView
             :propView="blogPostToShow"
             v-if="readingPost"
             v-on:searchPosts="readPost"
-        />
+        />-->
         <BlogHeader />
         <Divider />
         <BlogSearchBar v-on:searchPosts="getPostsByQuery" />
@@ -32,8 +33,8 @@ import BlogContainer from "../components/blogContainer/BlogContainer";
 import BlogHeader from "../components/blogHeader/BlogHeader";
 import BlogSearchBar from "../components/blogSearchBar/BlogSearcBar";
 import Divider from "../components/pageComponents/Divider";
-import Backdrop from "../components/backdrop/Backdrop";
-import SinglePostView from "../components/singlepostview/SinglePostView";
+//import Backdrop from "../components/backdrop/Backdrop";
+//import SinglePostView from "../components/singlepostview/SinglePostView";
 import LoadinIcon from "@/components/loadingIcon/LoadinIcon";
 import { logPageActivity, logClickActivity, logErrorActivity } from "../Logger";
 
@@ -44,8 +45,8 @@ export default {
         BlogHeader,
         BlogSearchBar,
         Divider,
-        Backdrop,
-        SinglePostView,
+        //Backdrop,
+        //SinglePostView,
         LoadinIcon,
     },
 
@@ -119,8 +120,12 @@ export default {
                     view.postTitle,
                     screen.width
                 );
+
+                this.$router.push({name:"BlogReaderPage", params:{id:view.postId, locale:view.postLocale}});
+                /*
                 this.blogPostToShow = view.view;
-                this.readingPost = !this.readingPost;
+                console.log(view.postId);
+                this.readingPost = !this.readingPost;*/
             } else {
                 this.blogPostToShow = "";
                 this.readingPost = !this.readingPost;

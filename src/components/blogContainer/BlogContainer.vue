@@ -4,6 +4,8 @@
             $emit('searchPosts', {
                 view: postToShow.post.view,
                 postTitle: postToShow.post.title,
+                postId: postToShow.post.id,
+                postLocale: postToShow.post.locale
             })
         "
         class="wrapper"

@@ -36,7 +36,7 @@ export default {
 .raisePost{
     display: block;
     flex-direction: column;
-    position: fixed;
+    /*position: fixed;*/
     width: 85%;
     height: 100%;
     left: 50%;

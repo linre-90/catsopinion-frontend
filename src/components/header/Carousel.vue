@@ -15,18 +15,14 @@ export default {
     components:{Slider},
     computed:{
         activePage(){
-            if(this.$store.state.page[1].active){
-                return this.$store.state.page[1].headerText;
-            }
-            if(this.$store.state.page[2].active){
-                return this.$store.state.page[2].headerText;
-            }
-            if(this.$store.state.page[3].active){
-                return this.$store.state.page[3].headerText;
-            }
-            else{
-                return this.$store.state.page[0].headerText;
-            }
+            let text;
+            this.$store.state.page.forEach(element => {
+                if(element.active){
+                    text = element.headerText;
+                    return;
+                }
+            });
+            return text;
         }
     }
 }

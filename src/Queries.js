@@ -15,9 +15,32 @@ export async function findNewest(db, locale) {
             .limit(5)
             .get();
         result.forEach((element) => {
-            data.push(element.data());
+            // Added this 26.3.2021
+            let objectToPush = element.data();
+            objectToPush["id"] = element.id;
+            data.push(objectToPush);
         });
         return data;
+    } catch (error) {
+        logErrorActivity("blog", locale, "findnewest", error, 500);
+        return ["error"];
+    }
+}
+
+export async function findById(db, locale, id) {
+    let collection = db.collection("en-blogposts");
+    if (locale === "fi") {
+        collection = db.collection("fi_blogposts");
+    }
+    try {
+        const result = await collection.doc(id).get();
+        if(result.exists){
+
+            return [result.data().view];
+        }
+        else{
+            return ["error"];
+        }
     } catch (error) {
         logErrorActivity("blog", locale, "findnewest", error, 500);
         return ["error"];
@@ -54,7 +77,10 @@ async function getOldest(db, locale) {
             .limit(5)
             .get();
         result.forEach((element) => {
-            data.push(element.data());
+            // Added this 26.3.2021
+            let objectToPush = element.data();
+            objectToPush["id"] = element.id;
+            data.push(objectToPush);
         });
         return data;
     } catch (error) {
@@ -76,7 +102,11 @@ async function findBySeries(db, queryParams, locale) {
         let data = [];
         const result = await collection.orderBy("date", "desc").get();
         result.forEach((element) => {
-            data.push(element.data());
+            // Added this 26.3.2021
+            let objectToPush = element.data();
+            objectToPush["id"] = element.id;
+            console.log(objectToPush);
+            data.push(objectToPush);
         });
         return data;
     } catch (error) {
@@ -95,7 +125,10 @@ export async function getHotNews(db, locale) {
         let data = [];
         const result = await collection.get();
         result.forEach((element) => {
-            data.push(element.data());
+            // Added this 26.3.2021
+            let objectToPush = element.data();
+            objectToPush["id"] = element.id;
+            data.push(objectToPush);
         });
         return data;
     } catch (error) {

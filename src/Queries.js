@@ -105,12 +105,10 @@ async function findBySeries(db, queryParams, locale) {
             // Added this 26.3.2021
             let objectToPush = element.data();
             objectToPush["id"] = element.id;
-            console.log(objectToPush);
             data.push(objectToPush);
         });
         return data;
     } catch (error) {
-        console.log(error);
         logErrorActivity("blog", locale, "findbyseries", error, 500);
         return ["error"];
     }

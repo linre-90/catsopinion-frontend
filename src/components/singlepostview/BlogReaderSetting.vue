@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h2>Settings</h2>
+        <h2>{{ $t("blogReaderSetting.settings") }}</h2>
         <div>
-            <p>Eye friendly mode?</p>
+            <p>{{ $t("blogReaderSetting.darkMode") }}</p>
             <label class="switch">
                 <input type="checkbox" id="darkMode" v-model="checked" v-on:change="$emit('valueChanged', checked)">
                 <span class="slider round"></span>

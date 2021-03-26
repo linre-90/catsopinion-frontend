@@ -148,5 +148,14 @@
     "hotnews": {
         "header": "Uutiset"
     },
-    "errorInRoute": "Voi ei, etsimääsi sivua ei ole olemassa!"
+    "errorInRoute": "Voi ei, etsimääsi sivua ei ole olemassa!",
+    "blogreader": {
+        "error": "Etsimääsi postia ei ole olemassa!",
+        "title": "Lue meidän blogi!",
+        "meta": "Tämä on juuri meidän sivua varten kehitetty blogin lukemis työkalu! Voit myös jakaa linkin suoraan kirjoitukseen."
+    },
+    "blogReaderSetting": {
+        "darkMode": "Silmä ystävällinen tila?",
+        "settings": "Asetukset"
+    }
 }

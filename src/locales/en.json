@@ -146,5 +146,14 @@
     "hotnews": {
         "header": "What is new"
     },
-    "errorInRoute": "Oh no, page you are looking for does not exists!"
+    "errorInRoute": "Oh no, page you are looking for does not exists!",
+    "blogreader": {
+        "error": "Something went wrong, blog post not found",
+        "title": "Read our post!",
+        "meta": "This is special blog reader just for our site. with this tool you can read our blog posts and share them by copying link."
+    },
+    "blogReaderSetting": {
+        "darkMode": "Eye friendly mode?",
+        "settings": "Settings"
+    }
 }

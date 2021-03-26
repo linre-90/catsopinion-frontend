@@ -3,6 +3,7 @@
         <Divider/>
         <BlogReaderSetting v-on:valueChanged="switchModes"/>
         <Divider/>
+        <h2 v-if="isError">{{ $t("blogreader.error") }}</h2>
         <LoadingIcon size="large" v-if="this.isLoading && !isError"/>
         <Postview  class="viewClass" v-if="!isLoading && !isError && view.length > 0" :view="view"/>
         <Divider/>
@@ -16,6 +17,7 @@ import LoadingIcon from "../components/loadingIcon/LoadinIcon";
 import Divider from "../components/pageComponents/Divider"
 import BlogReaderSetting from "../components/singlepostview/BlogReaderSetting";
 import {findById} from "../Queries.js";
+import {logErrorActivity} from "../Logger";
 
 export default {
     components:{Postview,LoadingIcon,Divider,BlogReaderSetting},
@@ -37,15 +39,14 @@ export default {
         this.$store.dispatch("toggleBlog", false);
         this.$store.dispatch("changeActivePage", "readerblog");
     },
-    //TODO change these
     metaInfo() {
         return {
-            titleTemplate: "%s | " + this.$t("metadata.appz.title"),
+            titleTemplate: "%s | " + this.$t("blogreader.title"),
             meta: [
                 {
                     vmid: "description",
                     name: "description",
-                    content: this.$t("metadata.appz.description"),
+                    content: this.$t("blogreader.meta"),
                 },
             ],
         };
@@ -56,7 +57,8 @@ export default {
             let response  = await findById(db, locale, id);
             this.isLoading = false;
             if(response[0] === "error"){
-                // TODO make error
+                this.isError = true;
+                logErrorActivity("BlogReader", this.locale, this.id, "error", 404, screen.width);
             }else{
                 this.view = response[0];
             }
@@ -75,6 +77,10 @@ export default {
 }
 .dark{
     background-color: #A49393;
+}
+
+h2{
+    text-align: center;
 }
 
 </style>

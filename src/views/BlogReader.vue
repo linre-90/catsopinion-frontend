@@ -1,8 +1,10 @@
 <template>
-    <div >
+    <div v-bind:class="{ 'ligth': !darkMode, 'dark': darkMode }">
+        <Divider/>
+        <BlogReaderSetting v-on:valueChanged="switchModes"/>
         <Divider/>
         <LoadingIcon size="large" v-if="this.isLoading && !isError"/>
-        <Postview v-if="!isLoading && !isError && view.length > 0" :view="view"/>
+        <Postview  class="viewClass" v-if="!isLoading && !isError && view.length > 0" :view="view"/>
         <Divider/>
     </div>
 </template>
@@ -12,10 +14,11 @@
 import Postview from "../components/singlepostview/PostView";
 import LoadingIcon from "../components/loadingIcon/LoadinIcon";
 import Divider from "../components/pageComponents/Divider"
+import BlogReaderSetting from "../components/singlepostview/BlogReaderSetting";
 import {findById} from "../Queries.js";
 
 export default {
-    components:{Postview,LoadingIcon,Divider},
+    components:{Postview,LoadingIcon,Divider,BlogReaderSetting},
     name: "BlogReaderPage",
     data(){
         return{
@@ -23,7 +26,8 @@ export default {
             id: "",
             locale:"",
             isLoading: true,
-            isError: false
+            isError: false,
+            darkMode:false
         }
     },
     created(){
@@ -56,12 +60,22 @@ export default {
             }else{
                 this.view = response[0];
             }
+        },
+        switchModes(value){
+            this.darkMode = value;
         }
     }
 }
 </script>
 
 <style scoped>
+
+.ligth{
+    background-color: #eed6d3;
+}
+.dark{
+    background-color: #A49393;
+}
 
 </style>
 

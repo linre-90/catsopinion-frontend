@@ -1,3 +1,5 @@
+// TODO this can be removed entirely
+
 <template >
     <div class="raisePost">
             <Divider/>

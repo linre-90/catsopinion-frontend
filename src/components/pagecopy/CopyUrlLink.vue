@@ -23,9 +23,10 @@ export default {
           input.setSelectionRange(0, 99999);
           document.execCommand("copy");
           this.copied = true;
-          setTimeout(() => {
+          //! something is wrong woth time out, messes up back to top button
+          /*setTimeout(() => {
             this.copied = false;
-          }, 5000);
+          }, 5000);*/
         } catch (error) {
           logErrorActivity(
             "blogReader",

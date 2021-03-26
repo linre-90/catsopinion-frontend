@@ -1,11 +1,15 @@
 <template>
     <div class="wrapper">
         <div v-html="view" class="post"></div>
+        <CopyLink/>
+        
     </div>
 </template>
 
 <script>
+import CopyLink from "../pagecopy/CopyUrlLink"
 export default {
+    components:{CopyLink},
     props: { view: String },
 
 };

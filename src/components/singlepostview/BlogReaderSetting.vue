@@ -1,14 +1,22 @@
 <template>
+  <div>
+    <h2>{{ $t("blogReaderSetting.settings") }}</h2>
     <div>
-        <h2>{{ $t("blogReaderSetting.settings") }}</h2>
-        <div>
-            <p>{{ $t("blogReaderSetting.darkMode") }}</p>
-            <label class="switch">
-                <input type="checkbox" id="darkMode" v-model="checked" v-on:change="$emit('valueChanged', checked)">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <!--
+      <p>{{ $t("blogReaderSetting.darkMode") }}</p>
+      <label class="switch">
+        <input
+          type="checkbox"
+          id="darkMode"
+          v-model="checked"
+          v-on:change="$emit('valueChanged', checked)"
+        />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div>
+      <CopyLink />
+    </div>
+    <!--
         <div id="font">
             <p>Font size?</p>
             <label for="small">Small</label>
@@ -22,28 +30,31 @@
 </template>
 
 <script>
+import CopyLink from "../pagecopy/CopyUrlLink";
 export default {
-    data(){
-        return{
-            checked: false
-        }
-    },
-
-}
+  data() {
+    return {
+      checked: false,
+    };
+  },
+  components: {
+    CopyLink,
+  },
+};
 </script>
 
 <style scoped>
-div{
-    margin: auto;
-    width: 100%;
-    text-align: center;
+div {
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
-label{
-    display: block;
+label {
+  display: block;
 }
-#font input{
-    width: 100%;
-    height: 2em;
+#font input {
+  width: 100%;
+  height: 2em;
 }
 
 .switch {
@@ -69,8 +80,8 @@ label{
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -81,12 +92,12 @@ label{
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #E8B4B8;
+  background-color: #e8b4b8;
 }
 
 input:focus + .slider {

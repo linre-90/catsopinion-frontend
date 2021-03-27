@@ -1,7 +1,7 @@
-require("firebase/app");
-require("firebase/database");
-require("firebase/firestore");
 import { logErrorActivity } from "./Logger";
+import "firebase/app";
+import "firebase/database";
+import "firebase/firestore";
 
 export async function findNewest(db, locale) {
     let collection = db.collection("en-blogposts");

@@ -151,7 +151,7 @@
     "errorInRoute": "Voi ei, etsimääsi sivua ei ole olemassa!",
     "blogreader": {
         "error": "Etsimääsi postia ei ole olemassa!",
-        "title": "Lue meidän blogi!",
+        "title": "Lue meidän blogi postaus!",
         "meta": "Tämä on juuri meidän sivua varten kehitetty blogin lukemis työkalu! Voit myös jakaa linkin suoraan kirjoitukseen."
     },
     "blogReaderSetting": {

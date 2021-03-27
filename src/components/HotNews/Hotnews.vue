@@ -65,10 +65,7 @@ export default {
             }
             this.firstTime = false;
         },
-        countDown: function() {
-            this.newsTime -= 1;
-        },
-        getNews: async function() {
+		getNews: async function() {
             this.news = await getHotNews(
                 this.$firebase.firestore(),
                 this.$i18n.locale

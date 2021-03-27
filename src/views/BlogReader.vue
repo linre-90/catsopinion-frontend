@@ -60,12 +60,22 @@ export default {
                 this.isError = true;
                 logErrorActivity("BlogReader", this.locale, this.id, "error", 404, screen.width);
             }else{
-                this.view = response[0];
+                this.view = this.parseHtml(response[0]);
             }
         },
         switchModes(value){
             this.darkMode = value;
-        }
+        },
+		parseHtml(html){
+			let div = document.createElement("div");
+			div.innerHTML = html;
+			let scripts = div.getElementsByTagName("script");
+			let i = scripts.length;
+			while (i--){
+				scripts[i].parentNode.removeChild(scripts[i]);
+			}
+			return div.innerHTML;
+		}
     }
 }
 </script>

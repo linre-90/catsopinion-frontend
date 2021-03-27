@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button href="#" @click="copyUrl">Copy url to clipboard</button>
-    <p v-if="copied" :class="{ animate__fadeInDown: copied, animate__animated: copied }" >Link copied</p>
+    <button @click="copyUrl">{{$t("copybtn.button")}}</button>
+    <p v-if="copied" :class="{ animate__fadeInDown: copied, animate__animated: copied }" >{{$t("copybtn.copied")}}</p>
   </div>
 </template>
 
@@ -9,44 +9,39 @@
 import { logErrorActivity } from "../../Logger.js";
 
 export default {
-  methods: {
-	copyUrl() {
-      if (
-        document.queryCommandSupported &&
-        document.queryCommandSupported("copy")
-      ) {
-        let input = document.createElement("textarea");
-        input.textContent = window.location.href;
-        document.body.appendChild(input);
-        try {
-          input.select();
-          input.setSelectionRange(0, 99999);
-          document.execCommand("copy");
-          this.copied = true;
-          //! something is wrong woth time out, messes up back to top button
-          /*setTimeout(() => {
-            this.copied = false;
-          }, 5000);*/
-        } catch (error) {
-          logErrorActivity(
-            "blogReader",
-            "none",
-            "copyURL",
-            error,
-            500,
-            screen.width
-          );
-        } finally {
-          document.body.removeChild(input);
-        }
-      }
+	methods: {
+		copyUrl() {
+			if(this.timer){
+                window.clearTimeout(this.timer);
+            }
+            if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+                let input = document.createElement("textarea");
+                input.textContent = window.location.href;
+                document.body.appendChild(input);
+                try {
+                    input.select();
+                    input.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    this.copied = true;
+                    this.timer = setTimeout(this.resetCounter, 7000);
+                } catch (error) {
+                    logErrorActivity("blogReader", "none", "copyURL", error, 500, screen.width);
+                } finally {
+                    document.body.removeChild(input);
+                }
+            }
+        },resetCounter(){
+			this.copied = false;
+			window.clearTimeout(this.timer);
+		}
     },
-  },
-  data() {
-    return {
-      copied: false,
-    };
-  },
+    data() {
+        return { copied: false, timer:null};
+    },beforeDestroy() {
+		if(this.timer){
+			window.clearTimeout(this.timer);
+		}
+	}
 };
 </script>
 
@@ -74,7 +69,7 @@ button:hover {
 
 p {
   background-color: #67595e;
-  width: 100px;
+  width: 160px;
   text-align: center;
   margin: 20px auto;
   padding: 5px;

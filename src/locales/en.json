@@ -155,5 +155,9 @@
     "blogReaderSetting": {
         "darkMode": "Eye friendly mode?",
         "settings": "Settings"
+    },
+    "copybtn": {
+        "button": "Copy url to clipboard",
+        "copied": "Copied to clipboard!"
     }
 }

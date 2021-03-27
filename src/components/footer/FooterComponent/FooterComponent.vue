@@ -29,8 +29,7 @@ export default {
 .container {
   width: 33.33%;
   text-align: center;
-  margin: auto;
-  margin-top: 0;
+	margin: 0 auto auto;
 }
 
 .footerHR{

@@ -142,7 +142,6 @@
 <script>
 import Divider from "./Divider";
 import axios from "axios";
-import LoadinIcon from "@/components/loadingIcon/LoadinIcon";
 import joi from "joi";
 import { logErrorActivity, logClickActivity } from "../../Logger";
 
@@ -168,7 +167,7 @@ const messageSchema = joi.object({
 
 export default {
     name: "contact-page",
-    components: { Divider, LoadinIcon },
+    components: { Divider },
     created: function() {
         this.$store.dispatch("changeActivePage", "contact");
         this.$store.dispatch("toggleBlog", false);

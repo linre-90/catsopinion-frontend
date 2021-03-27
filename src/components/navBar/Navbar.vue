@@ -147,21 +147,16 @@ export default {
 
 .navSection {
     background-color: #eed6d3;
-    padding: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    display: flex;
+	padding: 2px 10px;
+	display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
 
 .link {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    text-decoration: none;
+	padding: 50% 15px;
+	text-decoration: none;
     color: #67595e;
     font-size: 1.25rem;
     letter-spacing: 2px;
@@ -253,11 +248,8 @@ export default {
         margin-bottom: 15px;
     }
     .navSection a {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        letter-spacing: 2px;
+		padding: 5% 15px;
+		letter-spacing: 2px;
     }
 
     #hamburgerDiv {

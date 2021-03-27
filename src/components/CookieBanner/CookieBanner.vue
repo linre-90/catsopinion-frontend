@@ -42,7 +42,7 @@ export default {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 0px 20px 20px;
+    padding: 0 0 20px 20px;
     align-items: flex-end;
     justify-content: center;
     z-index: 20;

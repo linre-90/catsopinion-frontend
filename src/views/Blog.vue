@@ -38,13 +38,12 @@ export default {
         Divider,
         LoadinIcon,
     },
-
     methods: {
         removeAnimation() {
             setTimeout(() => {
                 document.getElementsByName("blogcont").forEach((e) => {
-                    e.classList.remove("animate__animated"),
-                        e.classList.remove("animate__zoomIn");
+					e.classList.remove("animate__animated");
+					e.classList.remove("animate__zoomIn");
                 });
             }, 1000);
         },
@@ -52,8 +51,7 @@ export default {
         async getData() {
             const db = this.$firebase.firestore();
             this.errormessage = null;
-            this.posts = await this.getNewestFive(db, this.$i18n.locale).catch(
-                (error) => {
+            this.posts = await this.getNewestFive(db, this.$i18n.locale).catch((error) => {
                     logErrorActivity(
                         "blog",
                         this.$i18n.locale,
@@ -76,19 +74,8 @@ export default {
             this.errormessage = null;
             const db = this.$firebase.firestore();
             this.posts = [];
-            this.posts = await getByQuery(
-                db,
-                queryParams,
-                this.$i18n.locale
-            ).catch((error) => {
-                logErrorActivity(
-                    "blog",
-                    this.$i18n.locale,
-                    "getpostsbyquery",
-                    error,
-                    500,
-                    screen.width
-                );
+            this.posts = await getByQuery(db, queryParams, this.$i18n.locale).catch((error) => {
+                logErrorActivity("blog", this.$i18n.locale, "getpostsbyquery", error, 500, screen.width);
             });
             if (
                 this.posts[0] === "error" ||
@@ -147,7 +134,7 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-    text-align: center;
-}
+	h2 {
+		text-align: center;
+	}
 </style>

@@ -71,10 +71,7 @@ div {
 h3 {
     display: inline-block;
     padding: 10px;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
+	margin: 0 30px;
 }
 select,
 button {
@@ -86,10 +83,8 @@ button {
     margin-right: 30px;
     margin-left: 30px;
     color: #eed6d3;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: none;
+	padding: 10px 15px;
+	outline: none;
 }
 button:hover {
     cursor: pointer;

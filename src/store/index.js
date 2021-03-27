@@ -39,10 +39,7 @@ export default new Vuex.Store({
     mutations: {
         changeActivePage(state, pageName) {
             state.page.forEach((page) => {
-                page.active = false;
-                if (page.name === pageName) {
-                    page.active = true;
-                }
+                page.active = page.name === pageName;
             });
         },
         toggleBlog(state, displayStatus) {

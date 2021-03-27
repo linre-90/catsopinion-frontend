@@ -58,7 +58,6 @@ export default {
     position: absolute;
     font-size: 4rem;
     color: var(--strongColor);
-    position: absolute;
     text-shadow: 1px 1px 5px #E8B4B8, -1px 1px 5px #E8B4B8, 1px -1px 5px  #E8B4B8, -1px -1px 5px #E8B4B8;
     bottom: 150px;
     left: 300px;

@@ -59,17 +59,15 @@ export default {
 .loadingBar {
     height: 3px;
     background-color: #a49393;
-    margin: auto;
-    margin-top: 40px;
-    opacity: 0.8;
+	margin: 40px auto auto;
+	opacity: 0.8;
 }
 
 .measureBar {
     height: 3px;
     background-color: #67595e;
     border-radius: 5px;
-    margin-left: 0;
-    margin: 0;
+	margin: 0;
     padding: 0;
 }
 </style>

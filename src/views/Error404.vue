@@ -10,9 +10,8 @@ export default {};
 </script>
 
 <style scoped>
-h1,
-h2 {
-    text-align: center;
-    margin: 100px 0 100px 0;
-}
+	h1, h2 {
+		text-align: center;
+		margin: 100px 0 100px 0;
+	}
 </style>

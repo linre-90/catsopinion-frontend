@@ -2,7 +2,6 @@
     <div class="wrapper">
         <div v-html="view" class="post"></div>
         <CopyLink/>
-        
     </div>
 </template>
 
@@ -70,9 +69,8 @@ export default {
 .post /deep/ p {
     font-family: "Lato", "sans-serif";
     width: 95%;
-    margin: auto;
-    margin-top: 30px;
-    line-height: 1.6em;
+	margin: 30px auto auto;
+	line-height: 1.6em;
     font-size: 1.2rem;
 }
 .post /deep/ ol {

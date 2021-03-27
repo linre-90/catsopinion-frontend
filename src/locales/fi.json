@@ -157,5 +157,9 @@
     "blogReaderSetting": {
         "darkMode": "Silmä ystävällinen tila?",
         "settings": "Asetukset"
+    },
+    "copybtn": {
+        "button": "Kopioi sivun url osoite",
+        "copied": "Kopioitu leikepöydälle!"
     }
 }

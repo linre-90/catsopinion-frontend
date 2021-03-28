@@ -38,6 +38,7 @@ export default {
         this.getPost(this.id, this.locale);
         this.$store.dispatch("toggleBlog", false);
         this.$store.dispatch("changeActivePage", "readerblog");
+        window.scrollTo({ top: 0, behavior: "smooth" });
     },
     metaInfo() {
         return {

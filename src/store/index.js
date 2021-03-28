@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
+        lastBlogQuery: null,
         blogActive: false,
         page: [
             {
@@ -48,6 +49,10 @@ export default new Vuex.Store({
         cookieOk(state) {
             state.bannerOk = true;
         },
+        setLastBlog(state, searchTerm){
+            state.lastBlogQuery = searchTerm;
+        }
+
     },
     actions: {
         changeActivePage(context, pageName) {
@@ -59,6 +64,9 @@ export default new Vuex.Store({
         cookieOk(context) {
             context.commit("cookieOk");
         },
+        setLastBlogSearch(context, searchTerm){
+            context.commit("setLastBlog", searchTerm);
+        }
     },
     modules: {},
 });

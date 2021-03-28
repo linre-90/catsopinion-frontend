@@ -86,7 +86,11 @@
         "blogPostShower": {
             "open": "Click to read full post"
         },
-        "errorMessage": "No documents to show! If problem continues please contact us!"
+        "errorMessage": "No documents to show! If problem continues please contact us!",
+        "searchTermText":{
+            "start": "Showing results for search: ",
+            "default": "Newest"
+        }
     },
     "appPage": {
         "card": {

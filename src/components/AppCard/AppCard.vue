@@ -1,9 +1,5 @@
 <template>
-    <router-link
-        class="wrapper link animate__animated animate__bounceIn"
-        :to="url"
-        name="appcard"
-    >
+    <router-link class="wrapper link animate__animated animate__bounceIn" :to="url" name="appcard">
         <h2>{{ name }}</h2>
         <Divider />
         <img :src="image" alt="image about app" />
@@ -12,15 +8,14 @@
         <p>
             <i>{{ $t("appPage.card.click") }}</i>
         </p>
-    </router-link>
+    </router-link>    
 </template>
-
 <script>
+
+
 import Divider from "../pageComponents/Divider";
 export default {
-    components: {
-        Divider,
-    },
+    components: { Divider },
     props: {
         name: String,
         description: String,

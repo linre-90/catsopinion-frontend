@@ -29,6 +29,7 @@ export default {
 };
 </script>
 
+
 <style>
 /*Colors
     --backgroundColor: #EED6D3;

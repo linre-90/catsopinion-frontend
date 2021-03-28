@@ -2,8 +2,10 @@
     <div>
         <BlogHeader />
         <Divider />
+        <!--Query parameters are emittet from search bar component-->
         <BlogSearchBar v-on:searchPosts="getPostsByQuery" />
         <Divider />
+        <h2 v-if="!loading">{{this.searchText}}</h2>
         <LoadinIcon size="x-large" v-if="loading" />
         <h2 v-if="errormessage">{{ errormessage }}</h2>
         <span v-if="posts.length > 0 && !errormessage">
@@ -70,6 +72,9 @@ export default {
             this.removeAnimation();
         },
         getPostsByQuery: async function(queryParams) {
+            // set new query params to store
+            this.$store.dispatch("setLastBlogSearch", queryParams);
+            this.updateSearchtext();
             this.loading = true;
             this.errormessage = null;
             const db = this.$firebase.firestore();
@@ -87,6 +92,9 @@ export default {
             }
             this.removeAnimation();
             this.loading = false;
+        },
+        updateSearchtext(){
+            this.searchText = this.$t("blogsite.searchTermText.start") + this.$store.state.lastBlogQuery.query
         },
         readPost(view) {
             if (view) {
@@ -107,13 +115,24 @@ export default {
             posts: [],
             errormessage: null,
             loading: false,
+            searchText:  this.$t("blogsite.searchTermText.start") + this.$t("blogsite.searchTermText.default")
         };
     },
     created() {
         this.loading = true;
         this.$store.dispatch("toggleBlog", true);
         logPageActivity("blog", this.$i18n.locale, screen.width);
-        this.getData();
+        // we do blog post search based on users history
+        // if user has not yet searched anything store variable would be null
+        // if user has searched posts we save last query param to this store variable and 
+        // do query by that
+        if(this.$store.state.lastBlogQuery === null){
+            this.getData();
+        }else{
+            this.updateSearchtext();
+            this.getPostsByQuery(this.$store.state.lastBlogQuery);
+        }
+        
     },
     beforeDestroy() {
         this.$store.dispatch("toggleBlog", false);
@@ -129,7 +148,7 @@ export default {
                 },
             ],
         };
-    },
+    }
 };
 </script>
 
